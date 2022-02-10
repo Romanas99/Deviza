@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox minHeight="412.0" minWidth="600.0" prefHeight="412.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hu.gov.mak.deviza.DevizaController">
+    <children>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="488.0" prefWidth="600.0">
+            <children>
+                <ComboBox id="arfolyamCbx" fx:id="arfolyamCbx" layoutX="25.0" layoutY="191.0" onAction="#handleComboBox" prefHeight="31.0" prefWidth="196.0" />
+                <Button id="webxmlBtn" fx:id="webxmlBtn" layoutX="486.0" layoutY="103.0" mnemonicParsing="false" onAction="#handleButtonWebXml" prefHeight="31.0" prefWidth="100.0" text="Letöltés" />
+                <Button id="atvaltasBtn" fx:id="atvaltasBtn" layoutX="296.0" layoutY="316.0" mnemonicParsing="false" onAction="#handleButtonAtvaltas" prefHeight="31.0" prefWidth="130.0" text="Átváltás" />
+                <Label layoutX="24.0" layoutY="157.0" prefHeight="21.0" prefWidth="196.0" text="Pénznem:">
+               <font>
+                  <Font size="17.0" />
+               </font></Label>
+            <TextField id="xmlUrlTxt" editable="false" layoutX="14.0" layoutY="103.0" prefHeight="31.0" prefWidth="455.0" fx:id="xmlUrlTxt" />
+            <TextField id="dbDevizaTxt" fx:id="dbDevizaTxt" layoutX="251.0" layoutY="191.0" onAction="#handleItemDbDeviza" prefHeight="25.0" prefWidth="220.0" />
+            <TextField id="dbHufTxt" fx:id="dbHufTxt" editable="false" layoutX="251.0" layoutY="270.0" prefHeight="25.0" prefWidth="220.0" />
+            <Label alignment="CENTER" layoutX="133.0" layoutY="8.0" prefHeight="50.0" prefWidth="344.0" text="DEVIZAVÁLTÁS">
+               <font>
+                  <Font name="System Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label layoutX="22.0" layoutY="72.0" prefHeight="21.0" prefWidth="320.0" text="Devizaárfolyam forrása:">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="249.0" layoutY="157.0" prefHeight="21.0" prefWidth="196.0" text="Összeg:">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="22.0" layoutY="274.0" prefHeight="26.0" prefWidth="209.0" text="Átváltott összeg forintban:">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            </children>
+        </AnchorPane>
+    </children>
+</VBox>
